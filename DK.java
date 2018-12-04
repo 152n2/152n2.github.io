@@ -1,9 +1,9 @@
 public class DK{
   public static void main(String[] args){
     int people,i, month, day, LR, BT;
-    double sin, BMI, tai;
+    double height, BMI, weight;
     String A, K,ABO;
-    A = System.console().readLine("作りたいDKの人数を入力してね:");
+    A = System.console().readLine("入力した数だけ男子高校生のステータスを作ります\n数を入力してね:");
     people = Integer.parseInt(A);
       for(i = 1 ; i <= people; i++ ){
         month = (int)(Math.random() * 12) + 1;
@@ -30,11 +30,11 @@ public class DK{
           } else{
             ABO = "AB";
           }
-        sin = (Math.random() * 0.2) + 1.600;
+        height = (Math.random() * 0.2) + 1.600;
         BMI = (Math.random() * 6.0) + 18.11;
-        tai = (BMI * sin * sin);
-        System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "利き\n"+"血液型 "+ ABO + " 型");
-        System.out.println("身長 " + (int)(sin * 100) + " cm 体重 " + (int)tai +" kg");
+        weight = (BMI * height * height);
+        System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "\n"+"血液型 "+ ABO + " 型");
+        System.out.println("身長 " + (int)(height * 100) + " cm 体重 " + (int)weight +" kg");
         System.out.println("");
       }
     }

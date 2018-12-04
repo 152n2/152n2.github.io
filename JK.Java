@@ -34,7 +34,8 @@ public class JK{
       BMI = (Math.random() * 6.0) + 17.81;
       tai = (BMI * sin * sin);
       System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "利き\n"+"血液型 "+ ABO + " 型");
-      System.out.println("身長 " + (int)(sin * 100) + " cm 体重 " + (int)tai +" kg\n");
+      System.out.println("身長 " + (int)(sin * 100) + " cm 体重 " + (int)tai +" kg");
+      System.out.println("");
     }
   }
 }

@@ -4,7 +4,7 @@ public class JK{
     double height, BMI, weight;
     String A,K,ABO;
     A = System.console().readLine("作りたいJKの人数を入力してね:");
-   people = Integer.parseInt(A);
+    people = Integer.parseInt(A);
      for(b = 1 ; b <= people; b++ ){
        month = (int)(Math.random() * 12) + 1;
           if ( month == 2 ){

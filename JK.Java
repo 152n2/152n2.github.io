@@ -1,7 +1,7 @@
 public class JK{
   public static void main(String[] args){
   int people,b, month, day, LR, BT;
-  double sin, BMI, tai;
+  double height, BMI, weight;
   String A,K,ABO;
   A = System.console().readLine("作りたいJKの人数を入力してね:");
   people = Integer.parseInt(A);
@@ -30,10 +30,10 @@ public class JK{
         } else{
           ABO = "AB";
         }
-      sin = (Math.random() * 0.2) + 1.508;
+      height = (Math.random() * 0.2) + 1.508;
       BMI = (Math.random() * 6.0) + 17.81;
-      tai = (BMI * sin * sin);
-      System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "利き\n"+"血液型 "+ ABO + " 型");
+      weight = (BMI * height * height);
+      System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "\n"+"血液型 "+ ABO + " 型");
       System.out.println("身長 " + (int)(sin * 100) + " cm 体重 " + (int)tai +" kg");
       System.out.println("");
     }

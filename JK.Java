@@ -39,7 +39,7 @@ public class JK{
        weight = (BMI * height * height);
        //出力
        System.out.println("誕生日 " + month + " 月 " + day + " 日\n" + "利き手 " + K + "\n"+"血液型 "+ ABO + " 型");
-       System.out.println("身長 " + (int)(height * 100) + " cm 体重 " + (int)tai +" kg");
+       System.out.println("身長 " + (int)(height * 100) + " cm 体重 " + (int)weight +" kg");
        System.out.println("");
     }
   }

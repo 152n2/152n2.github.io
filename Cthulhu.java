@@ -7,10 +7,10 @@ public class Cthulhu{
     int people, i, j, k, num, tmp = 0;
     String job;
     Scanner A = new Scanner(System.in);
-    System.out.print("プレーヤーの人数を入力してね:");
-    people = A.nextInt(); //整数に変換
     double status[][] = new double[people][15];
     String eva[] = {"STR","CON","POW","DEX","APP","SIZ","INT","EDU","SAN","幸運","アイデア","知識","耐久力","ダメージボーナス","マジックポイント"};//ステータス
+    System.out.print("プレーヤーの人数を入力してね:");
+    people = A.nextInt(); //整数に変換
 
 
     for (i = 0; i < people ; i++){

@@ -1,12 +1,14 @@
+import java.util.Scanner;
 import java.util.Random;
 
 public class Cthulhu{
   public static void main(String[] args){
     Random r = new Random();
     int people, i, j, k, num, tmp = 0;
-    String A,job;
-    A = System.console().readLine("プレーヤーの人数を入力してね:");
-    people = Integer.parseInt(A); //整数に変換
+    String job;
+    Scanner A = new Scanner(System.in);
+    System.out.print("プレーヤーの人数を入力してね:");
+    people = A.nextInt(); //整数に変換
     double status[][] = new double[people][15];
     String eva[] = {"STR","CON","POW","DEX","APP","SIZ","INT","EDU","SAN","幸運","アイデア","知識","耐久力","ダメージボーナス","マジックポイント"};//ステータス
 
@@ -47,11 +49,12 @@ public class Cthulhu{
 
     }
     for (i = 0 ; i < people ; i++) {
+          System.out.println("---探索者 "+ (i+1) + "のステータス---");
       for (j = 0 ; j < 15 ; j++) {
           if (j == 12) {
-            System.out.println("プレーヤー"+ (i + 1)+ " の " + eva[j] + " ・・・ " + status[i][j]);
+            System.out.println(eva[j] + " ・・・ " + status[i][j]);
           }else{
-            System.out.println("プレーヤー"+ (i + 1)+ " の " + eva[j] + " ・・・ " + (int)(status[i][j]));
+            System.out.println(eva[j] + " ・・・ " + (int)(status[i][j]));
           }
 
       }
